@@ -1,0 +1,16 @@
+package finalsınavıcalısma;
+import java.util.Scanner;
+public class uygulama4 {
+
+	public static void main(String[] args) {
+		Scanner oku=new Scanner(System.in);
+        System.out.print("Tersten yazılacak sayıyı giriniz: ");
+        int a=oku.nextInt();
+        while(a != 0)
+        {
+            System.out.print(a%10);
+            a/=10;
+        }
+    }
+
+	}
