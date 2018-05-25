@@ -1,0 +1,34 @@
+package finalsınavıcalısma;
+import java.util.Scanner;
+public class uygulama2 {
+	public static void main (String [] args) 
+	{
+		Scanner input=new Scanner(System.in);
+		System.out.println("Vize notunuzu giriniz");
+		int a = input.nextInt();
+		System.out.println("Uygulama notunuzu giriniz");
+		int b = input.nextInt();
+		System.out.println("Final notunuzu giriniz");
+		int c = input.nextInt();
+	 
+		double sonuc_bir = (a*0.3);
+		double sonuc_iki = (b*0.2);
+		double sonuc_üc  = (c*0.5);
+		double sonuc=(sonuc_bir+sonuc_iki+sonuc_üc);
+		System.out.println("Vize notunuzun %30'u  " +  sonuc_bir);
+		System.out.println("Uygulama notunuzun %20'si  "+  sonuc_iki);
+		System.out.println("Final notunuzun %50'si  "+  sonuc_üc);
+		System.out.println("Ders Ortalamanınız  " + sonuc);
+		if(sonuc>=35)
+		{
+			System.out.println("Geçtiniz");
+		}
+		else {
+			System.out.println("Kaldınız");
+		}
+	
+	
+	
+	}
+
+}
