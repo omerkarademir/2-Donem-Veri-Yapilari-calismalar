@@ -1,0 +1,40 @@
+package finalsınavıcalısma;
+import java.util.Scanner;
+public class uygulama5 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Bir Sayı Giriniz :" );
+
+		boolean asal = true;
+
+		int sayi = scanner.nextInt();
+
+		if (sayi <= 1)
+		System.out.println("1 den büyük pozitif tam sayılar asal olabilir ");
+
+		else{
+		for (int i = 2; i < sayi; i++) {
+		int kalan = sayi % i;
+
+		if (kalan == 0) {
+		asal = false;
+		break;
+		}
+		}
+		if( asal ){
+
+		System.out.println("Girdiğiniz Sayi Asal Sayıdır ");
+		}
+		else{
+
+		System.out.println("Girdiğiniz Sayi Asal Degildir ");
+		}
+
+		}
+    }
+
+	}
+
+
